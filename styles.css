@@ -427,6 +427,11 @@ footer {
     .team-cards {
         gap: 1.2rem;
     }
+    .team-card {
+        min-width: 140px;
+        max-width: 100%;
+        padding: 1rem 1rem;
+    }
 }
 
 @media (max-width: 700px) {
@@ -438,10 +443,36 @@ footer {
     }
     nav ul {
         gap: 1rem;
+        flex-wrap: wrap;
     }
     .team-cards {
         flex-direction: column;
         gap: 1rem;
-        align-items: center;
+        align-items: stretch;
+    }
+    .team-card {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1rem 0.5rem;
+    }
+    .team-photo {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+/* Optional: make nav scrollable horizontally on very small screens */
+@media (max-width: 500px) {
+    nav ul {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 0.7rem;
+    }
+    .cta-button {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
     }
 }
