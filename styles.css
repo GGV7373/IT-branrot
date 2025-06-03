@@ -412,6 +412,12 @@ footer {
     text-shadow: 0 0 6px #aaffcc44;
 }
 
+.blog-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
 @media (max-width: 900px) {
     main {
         padding: 1rem;
