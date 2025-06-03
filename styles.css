@@ -364,12 +364,14 @@ footer {
     border-radius: 14px;
     padding: 1.5rem 1.7rem;
     min-width: 180px;
+    max-width: 220px;
     box-shadow: 0 0 20px #ffb6e644, 0 0 10px #7de2fc33;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: border 0.2s, box-shadow 0.2s;
+    margin-bottom: 1.2rem;
 }
 
 .team-card:hover {
