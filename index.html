@@ -3,19 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>IT-Brainrot</title>
+        <title>IT-Brainrot | Home</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="media/it-brainrot.png" type="image/png" />
+        <link rel="icon" href="media/it-brainrot.png" type="image/png">
     </head>
     <body>
         <header>
             <h1>IT-Brainrot</h1>
             <h3>Nominated for best website in IM-Awards 2025</h3>
-            <p class="subtitle">Welcome to IT-Brainrot: The headquarters for IT idiots </p>
+            <p class="subtitle">Welcome to IT-Brainrot: The headquarters for IT idiots</p>
         </header>
         <nav>
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -28,7 +33,7 @@
             </search>
         </nav>
         <main>
-            <section class="hero">
+            <section class="hero fade-in">
                 <h2>Reduce Your IT Potential</h2>
                 <p>
                     IT-Brainrot is a digital dumpster fire for tech nerds, students, and keyboard warriors who accidentally became professionals.
@@ -36,30 +41,44 @@
                 </p>
                 <a href="blog.html" class="cta-button">Explore the Blog</a>
             </section>
-            <section class="features">
+            <section class="features fade-in">
                 <h3>What You'll Find Here (Besides Regret)</h3>
                 <ul>
                     <li><strong>Unnecessarily Deep Articles:</strong> Pretend you understand complex tech stuff while silently crying inside.</li>
-                    <li><strong>Chaotic Tutorials:</strong> Follow our “step-by-step” guides that may or may not break your PC (fun!).</li>
+                    <li><strong>Chaotic Tutorials:</strong> Follow our "step-by-step" guides that may or may not break your PC (fun!).</li>
                     <li><strong>Questionable Discussions:</strong> Argue with strangers on the internet and maybe learn something by accident.</li>
                     <li><strong>Random Resources:</strong> Download tools, PDFs, and memes we found at 3AM and thought were useful.</li>
                 </ul>
-
-
             </section>
-            <section class="about-preview">
+            <section class="latest-posts fade-in">
+                <h3>Latest Posts</h3>
+                <div class="blog-list">
+                    <article class="blog-preview">
+                        <h2><a href="blog-python.html">Getting Started with Python</a></h2>
+                        <p>Learn Python the hard way: by banging your head on the keyboard and hoping something runs.</p>
+                        <span class="date">June 2024</span>
+                    </article>
+                    <article class="blog-preview">
+                        <h2><a href="blog-cyes.html">Cybersecurity Essentials</a></h2>
+                        <p>Because nobody wants their embarrassing memes leaked.</p>
+                        <span class="date">May 2024</span>
+                    </article>
+                </div>
+                <a href="blog.html" class="cta-button">View All Posts</a>
+            </section>
+            <section class="about-preview fade-in">
                 <h3>About IT-Brainrot</h3>
                 <p>
-                    Our mission is simple: confuse beginners, annoy experts, and accidentally teach someone something.  
-                    If you know what you’re doing, why are you even here?  
-                    <a href="about.html" class="cta-button" style="margin-top:1rem;display:inline-block;">Come read our tragic origin story &rarr;</a>
+                    Our mission is simple: confuse beginners, annoy experts, and accidentally teach someone something.
+                    If you know what you're doing, why are you even here?
+                    <a href="about.html" class="cta-button">Come read our tragic origin story &rarr;</a>
                 </p>
             </section>
         </main>
         <footer>
-            <p>&copy; 2024 IT-Brainrot. All rights reserved.</p>
+            <p>&copy; 2025 IT-Brainrot. All rights reserved.</p>
             <p>Powered by caffeine & chaos</p>
         </footer>
-        <script src="skript.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

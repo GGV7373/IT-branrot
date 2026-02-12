@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact</title>
+        <title>IT-Brainrot | Contact</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="media/it-brainrot.png" type="image/png" />
+        <link rel="icon" href="media/it-brainrot.png" type="image/png">
     </head>
     <body>
         <header>
@@ -13,10 +13,15 @@
             <p class="subtitle">IT-Brainrot wants your feedback</p>
         </header>
         <nav>
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
             <search>
@@ -27,18 +32,62 @@
             </search>
         </nav>
         <main>
-            <section class="contact-info">
+            <section class="contact-form fade-in">
+                <h2>Get in Touch</h2>
+                <p>Got a question, complaint, or a meme to share? Drop us a message.</p>
+                <form id="contact-form" action="#" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What's this about?">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+            <section class="faq fade-in">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Is IT-Brainrot a real company?</div>
+                    <div class="faq-answer">Technically, we're more of a "collective delusion." But yes, we make real content for real humans (and the occasional bot).</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I write for IT-Brainrot?</div>
+                    <div class="faq-answer">Absolutely! If you can string together words that are vaguely related to IT and mildly entertaining, you're overqualified. Send us a message above.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Why is the search broken?</div>
+                    <div class="faq-answer">Because building a search engine is hard and we prefer to spend our time writing jokes. Use Ctrl+F like a pro.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How often do you post new articles?</div>
+                    <div class="faq-answer">Whenever inspiration strikes, which is usually at 2AM after too much caffeine. So... irregularly.</div>
+                </div>
+            </section>
+
+            <section class="contact-info fade-in">
                 <h2>Other Ways to Reach Us</h2>
                 <ul>
                     <li>Email: <a href="mailto:contact@it-brainrot.com">contact@it-brainrot.com</a></li>
-                    <li>Twitter: <a href="#">@ITBrainrot</a></li>
+                    <li>GitHub: <a href="https://github.com/CodexYT1" target="_blank" rel="noopener">@CodexYT1</a></li>
                 </ul>
             </section>
         </main>
         <footer>
-            <p>&copy; 2024 IT-Brainrot. All rights reserved.</p>
+            <p>&copy; 2025 IT-Brainrot. All rights reserved.</p>
             <p>Powered by caffeine & chaos</p>
         </footer>
-        <script src="skript.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
